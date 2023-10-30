@@ -1,17 +1,39 @@
 /* ==UserStyle==
-@name         Micfong's Luogu Dark
-@namespace    USO Archive
-@author       Michael Zhang
-@description  娣辫壊妯″紡鐨勬礇璋?@version      20211229.05.32
+@name         DarkLuogu
+@namespace    net.myitian.style.dark_luogu
+@author       Michael Zhang, Myitian
+@description  深色模式的洛谷
+@version      20231030.23.30
 @license      CC-BY-NC-SA-4.0
-@preprocessor uso
 ==/UserStyle== */
 @-moz-document regexp("(.*www\\.luogu\\.com\\.cn/|.*www\\.luogu\\.com\\.cn/[^b].*)") {
+
+    .forum-name {
+        color: #ccc !important;
+    }
+
+    .arrow {
+        color: rgba(255, 255, 255, .75) !important;
+    }
+
+    ::placeholder,
+    .lfe-placeholder {
+        color: inherit !important;
+    }
+
+    .search-icon {
+        color: rgba(255, 255, 255, 0.25) !important;
+    }
+
+    section .title {
+        color: inherit !important;
+    }
+
     .lfe-body {
         background: #282828 !important;
     }
 
-    .header-layout.tiny[data-v-90bffe18] {
+    div.wrapper.wrapped.lfe-body.header-layout.tiny {
         background: #202020 !important;
     }
 
